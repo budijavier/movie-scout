@@ -1,0 +1,99 @@
+.asideBar {
+  background: linear-gradient(to bottom right, #14141a, #28282d);
+  padding: 20px;
+  color: #fff;
+}
+
+.asideBar h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.asideBar .list-group {
+  padding: 0;
+  list-style: none;
+}
+
+.asideBar .list-group-item {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.asideBar .list-group-item.selected {
+  background-color: #ff5860;
+  box-shadow: 0 0 10px rgba(255, 88, 96, 0.5);
+  opacity: 0.9;
+}
+
+.asideBar .list-group-item.selected .remove-icon {
+  margin-left: auto;
+  color: #fff;
+}
+
+.asideBar .list-group-item:hover {
+  text-decoration: underline;
+}
+
+.asideBar .list-group-item:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.asideBar .loading {
+  text-align: center;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 10px;
+}
+
+/* New styles for a more interesting UI/UX */
+.asideBar .list-group-item.selected:hover {
+  background-color: #ff5860;
+  opacity: 1;
+}
+
+.asideBar .list-group-item.selected .remove-icon:hover {
+  color: #ff5860;
+}
+
+.asideBar .list-group-item .remove-icon {
+  display: none;
+  transition: color 0.3s ease;
+}
+
+.asideBar .list-group-item:hover .remove-icon {
+  display: block;
+}
+
+.asideBar .list-group-item:hover:before {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.asideBar .list-group-item:hover:not(.selected) {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.asideBar .list-group-item:hover:not(.selected) .remove-icon {
+  display: none;
+}
+
+.asideBar .list-group-item:before {
+  display: none;
+}

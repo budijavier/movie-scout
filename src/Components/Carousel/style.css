@@ -1,0 +1,48 @@
+.myCarWrap {
+  margin: 20px 10px 10px 10px;
+}
+
+.carouselItem {
+  position: relative;
+  margin: 5px;
+  transition: transform 0.3s;
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.carouselItem:hover {
+  transform: scale(1.05);
+}
+
+.carouselItem img {
+  width: 85%;
+  height: auto;
+  object-fit: cover;
+  filter: brightness(0.8);
+  transition: filter 0.3s;
+}
+
+.carouselItem:hover img {
+  filter: brightness(1);
+}
+
+.carouselItemText {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s;
+  transform: translateY(100%);
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.carouselItem:hover .carouselItemText {
+  opacity: 1;
+  transform: translateY(0%);
+}

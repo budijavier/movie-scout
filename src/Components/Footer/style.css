@@ -1,0 +1,77 @@
+.myFooter {
+  background-color: #28282d;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding: 40px 0 50px; /* Increased bottom padding for scroll to top button */
+  box-shadow: 0 5px 25px 0 rgb(0 0 0 / 30%);
+}
+
+.myFooter:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  display: block;
+  background-image: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);
+  box-shadow: 0 0 20px 0 rgb(255 88 96 / 50%);
+}
+
+.socialIconsList {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.socialIconsList li {
+  margin-right: 30px;
+}
+
+.socialIconsList li:last-child {
+  margin-right: 0;
+}
+
+.socialIconsList a {
+  font-size: 28px;
+  color: #ffffff;
+  transition: color 0.4s ease;
+  text-decoration: none;
+}
+
+.socialIconsList a:hover {
+  color: #ff55a5;
+}
+
+.footerContent {
+  margin-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  text-align: center;
+}
+
+.footerContent small {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+}
+
+.scrollToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #ff5860;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 100;
+}
+
+.scrollToTop:hover {
+  background-color: #ff55a5;
+}
